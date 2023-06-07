@@ -14,11 +14,10 @@ for i in range(16):
     col = st.number_input(f"Enter lab marks {i+1}", value=0.0, step=0.1)
     cols.append(col)
 
-cols.append(total_marks)
-
 if st.button('Predict pass/fail'):
     if total_marks:
-        marks = np.array([cols[-1]]).reshape(1, -1)
+        cols.append(total_marks)
+        marks = np.array(cols).reshape(1, -1)
         prediction = model.predict(marks)
 
         if prediction == 0:
@@ -29,7 +28,6 @@ if st.button('Predict pass/fail'):
             st.write('Result: weak & fail')
     else:
         st.error("Please fill in the total marks field.")
-
 # Embedding YouTube video
 video_url = "https://youtu.be/HAo9AwIGdTI"  # Replace with your YouTube video URL or ID
 st.video(video_url)
