@@ -15,6 +15,9 @@ MY MODEL TAKE 16 INPUT OR ELSE 1 INPUT WHICH IS TOTAL IN Educational Process Min
 ![image](https://github.com/Ajay-308/Educational-Process-Mining-datasets/assets/112794893/c6a1c8c5-b2a2-43bf-a605-69959641831e)
 
 
+
 to run : streamlit run epm.py
+
+url link:-https://ajay-308-educational-process-mining-datasets-epm-orm3m1.streamlit.app/
 
 
